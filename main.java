@@ -13,8 +13,7 @@ public class main
      System.out.println("Options:");
      System.out.println("Enter 1: Dollar");
      System.out.println("Enter 2: Yuan");
-     System.out.println("Enter 3: Euro");
-     // добавить опцию 4й валюты
+     System.out.println("Enter 3: Euro")
      
      System.out.println("\nChoose your option: ");
      choice = sc.nextInt();
@@ -26,30 +25,27 @@ public class main
 
      switch (choice)
        {
-         case 1: // Dollar Conversion
+         case 1:
             yuan = amount * 7.12;
             System.out.println(amount + " Dollar = " + yuan + " Yuan");
             euro = amount * 1.02;
             System.out.println(amount + " Dollar = " + euro + " Euro");
            break;
 
-        case 2: // Yuan Conversion
+        case 2:
            dollar = amount * 0.14;
             System.out.println(amount + " Yuan = " + dollar + " Dollar");
             euro = amount * 0.14;
             System.out.println(amount + " Yuan = " + euro + " Euro");
            break;
 
-        case 3: // Euro Conversion
+        case 3:
            dollar = amount * 0.98;
             System.out.println(amount + " Euro = " + dollar + " Dollar");
             yuan = amount * 6.98;
             System.out.println(amount + " Euro = " + yuan + " Yuan");
            break;
            
-        // добавить обработку ввода "case 4" 
-           
-      // Default case
          default:
            System.out.println("Invalid input");
         }
